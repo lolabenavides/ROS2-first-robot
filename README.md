@@ -19,13 +19,13 @@ This repository documents my journey learning **ROS2 (Robot Operating System 2)*
 
 - [ ] Understand the ROS2 architecture (nodes, topics, services, actions)
 - [ ] Create and build a ROS2 workspace and packages
-- [ ] Write publisher and subscriber nodes in Python
+- [ ] Create a reproducible Docker-based development environment
+- [ ] Define a basic robot model using URDF/XACRO
+- [ ] Write publisher and subscriber nodes in C++
+    - [ ] node_wheel_control to publish wheel movement commands
+    - [ ] node_robot_control to subscribe and apply those commands
+- [ ] Visualize the robot in RViz2 and observe its movement
 - [ ] Use GitHub for version control
-- [ ] User Docker for the project
-<!-- - [ ] Define and use custom message types
-- [ ] Simulate a robot using Gazebo / RViz
-- [ ] Implement basic robot movement and sensing
-- [ ] Use `colcon` build system and `ros2` CLI tools-->
 ---
 
 ## Project Structure (TODO)

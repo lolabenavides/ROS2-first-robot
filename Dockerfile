@@ -1,11 +1,13 @@
 FROM ros:jazzy-ros-base as aptgetter
 
 #Install dependencies
-RUN apt-get update && apt-get install -y 
-#\
-#ros-jazzy-xacro \
-#ros-jazzy-robot-state-publisher \
-#&& rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y \
+# Visualization
+    ros-jazzy-robot-state-publisher \   
+    ros-jazzy-joint-state-publisher-gui \
+    ros-jazzy-xacro \
+# Delete apt files needed for installation
+    && rm -rf /var/lib/apt/lists/*
 
 #COPY WORKSPACE
 #Wordir does not have to match your directory inside you pc. It is the name used inside the container
